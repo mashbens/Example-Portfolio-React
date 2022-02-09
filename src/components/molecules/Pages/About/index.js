@@ -6,7 +6,12 @@ import { Color } from '../../../atoms/Styles';
 import { Paragraf } from '../../../atoms/Paragraf';
 import { Block } from '../../../atoms/Block';
 
-const About = () => {
+class About extends React.Component {
+  constructor(props){
+    super()
+
+  }
+  render () {
     return(
         <div>
           <TitleLarge>ARIF<Color>BUDIMAN</Color></TitleLarge>
@@ -32,8 +37,8 @@ const About = () => {
               </IconsLink>     
             </Icons>
         </div>
-    )
+      )
+  }
 }
-
 
 export default About

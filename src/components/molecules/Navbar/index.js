@@ -8,16 +8,21 @@ import {
   Img
 } from './NavbarElements'
 
-const Navbar = () => {
-  return (
-    <>
+class Navbar extends React.Component {
+  constructor(props){
+    super()
+
+  }
+  render () {
+    return (
+      <>
       <Nav>
         <NavbarContainer>
           <NavLinks to='/'>
             <Img />
           </NavLinks>
           <NavMenu>
-             <NavItem>
+            <NavItem>
               <NavLinks to={'/about'}>About</NavLinks>
             </NavItem>
             <NavItem>
@@ -39,8 +44,9 @@ const Navbar = () => {
         </NavbarContainer>
       </Nav>
     </>  
-  )
-};
+    )
+  }
+}
 
 export default Navbar;
 
@@ -49,23 +55,5 @@ export default Navbar;
 
 
 
-
-// export default function Navbars() {
-//   return (
-//     <div>
-//       <nav className='sidenav'>
-//         <>
-//           <ul><Link className='linkitem' to={'/'}>Home </Link></ul>
-//           <ul> <Link className='linkitem' to={'/about'}>About </Link> </ul>
-//           <ul><Link className='linkitem' to={'/education'}>Education </Link></ul> 
-//           <ul><Link className='linkitem' to={'/experiences'}>Experiences </Link></ul>
-//           <ul><Link className='linkitem' to={'/interests'}>Interests </Link></ul>
-//           <ul><Link className='linkitem' to={'/awards'}>Awards</Link></ul>
-//           <ul><Link className='linkitem' to={'/skills'}>Skills </Link></ul>
-//         </>
-//       </nav>   
-//     </div>
-//   )
-// }
 
 

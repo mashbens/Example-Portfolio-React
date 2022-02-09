@@ -7,8 +7,6 @@ export const Icons = styled.div`
     font-size: 30px;
     vertical-align: middle; //for vertical middle icon
 
-
-
 `
 export const IconsLink = styled.a`
   font-size: 40px;

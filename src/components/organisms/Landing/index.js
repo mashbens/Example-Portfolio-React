@@ -15,26 +15,30 @@ import Skills from '../../molecules/Pages/Skills/Index'
 import Navbars from '../../molecules/Navbar/index'
 import {Main} from '../../molecules/Pages/PagesElements'
 import {Container} from './LandingElements'
-function Pages () {
-  
 
-  return ( 
-      <Container>     
-          <Navbars />
-          <Main>
-              <Routes >
-                  <Route path="/" element={<About />}/>
-                  <Route path="/about" element={<About />}/>
-                  <Route path="/awards" element={<Awards />}/>
-                  <Route path="/education" element={<Education />}/>
-                  <Route path="/experiences" element={<Experiences />}/>
-                  <Route path="/interests" element={<Interests />}/>
-                  <Route path="/skills" element={<Skills />}/>
-              </Routes>
-          
-          </Main>
-      </Container>
-  );
+class Pages extends React.Component {
+  constructor(props){
+    super()
+
+  }
+  render () {
+    return ( 
+        <Container>     
+            <Navbars />
+            <Main>
+                <Routes >
+                    <Route path="/" element={<About />}/>
+                    <Route path="/about" element={<About />}/>
+                    <Route path="/awards" element={<Awards />}/>
+                    <Route path="/education" element={<Education />}/>
+                    <Route path="/experiences" element={<Experiences />}/>
+                    <Route path="/interests" element={<Interests />}/>
+                    <Route path="/skills" element={<Skills />}/>
+                </Routes>
+            
+            </Main>
+        </Container>
+    );
+  }
 }
-
 export default Pages;

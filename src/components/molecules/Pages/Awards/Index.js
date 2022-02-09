@@ -6,27 +6,32 @@ import { Icons } from '../../../atoms/Icons';
 import { List, ListItem } from '../../../atoms/List/Index';
 
 
-const Awards = () => {
-  return(
-    <div className='container'>
-      <TitleSmall>Awards</TitleSmall>
-        <List>
-          <ListItem>
-            <Icons><GiAchievement /></Icons>
-            <Paragraf>Menang Piala president Junior Programmer</Paragraf>
-          </ListItem>
-          <ListItem>
-            <Icons><GiAchievement /></Icons>
-            <Paragraf>Lorem Ipsum is simply dummy text of the printing and typese</Paragraf>
-          </ListItem>
-          <ListItem>
-            <Icons><GiAchievement /></Icons>
-            <Paragraf>Lorem Ipsum is simply dummy textnd </Paragraf>
-          </ListItem>
-        </List>
-      
-    </div>  
-  )
-}
+class Awards extends React.Component {
+  constructor(props){
+    super()
 
+  }
+  render () {
+  return(
+      <div className='container'>
+        <TitleSmall>Awards</TitleSmall>
+          <List>
+            <ListItem>
+              <Icons><GiAchievement /></Icons>
+              <Paragraf>Menang Piala president Junior Programmer</Paragraf>
+            </ListItem>
+            <ListItem>
+              <Icons><GiAchievement /></Icons>
+              <Paragraf>Lorem Ipsum is simply dummy text of the printing and typese</Paragraf>
+            </ListItem>
+            <ListItem>
+              <Icons><GiAchievement /></Icons>
+              <Paragraf>Lorem Ipsum is simply dummy textnd </Paragraf>
+            </ListItem>
+          </List>
+        
+      </div>  
+    )
+  }
+}
 export default Awards
